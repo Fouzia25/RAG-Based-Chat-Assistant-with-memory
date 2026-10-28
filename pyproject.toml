@@ -1,0 +1,48 @@
+[project]
+name = "rag-chat-assistant"
+version = "0.1.0"
+description = "RAG chat assistant with LangChain, OpenAI, PGVector and persistent Postgres/Redis memory"
+readme = "README.md"
+# langchain-redis 0.2.x does not support Python 3.14 yet.
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "langchain>=1.4,<2",
+    "langchain-core>=1.7,<2",
+    "langchain-openai>=1.7,<2",
+    "langchain-community>=0.4,<0.5",
+    "langchain-text-splitters>=1.1,<2",
+    "langchain-postgres>=0.0.19,<0.1",
+    "langchain-redis>=0.2.6,<0.3",
+    "psycopg[binary]>=3.3,<4",
+    "redis>=6",
+    "fastapi>=0.120",
+    "uvicorn[standard]>=0.38",
+    "python-multipart>=0.0.20",
+    "pydantic>=2.10,<3",
+    "pydantic-settings>=2.10,<3",
+    "pypdf>=6",
+    "docx2txt>=0.9",
+    "streamlit>=1.57",
+    "requests>=2.32",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9",
+    "httpx>=0.28",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = [
+    # Noise from third-party packages, not this project.
+    "ignore::DeprecationWarning:pydantic.*",
+    # Known, accepted deprecations (chat-history classes, langchain-community);
+    # see "Deprecation notes" in the README.
+    "ignore:.*was deprecated in LangChain.*",
+    "ignore:`langchain-community` is being sunset.*",
+]

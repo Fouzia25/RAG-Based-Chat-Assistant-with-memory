@@ -1,0 +1,19 @@
+Brightleaf Notes - Product FAQ (fictional sample)
+
+Q: What is Brightleaf Notes?
+A: Brightleaf Notes is a note-taking app with offline sync, end-to-end encryption and a built-in task list.
+
+Q: Which plans are available?
+A: There are three plans. Free: up to 3 notebooks and 100 MB of storage. Pro: USD 6 per month, unlimited notebooks and 10 GB storage. Team: USD 12 per user per month, adds shared workspaces and admin controls.
+
+Q: What is the refund policy?
+A: Pro and Team subscriptions can be refunded in full within 14 days of purchase. After 14 days, refunds are prorated for annual plans only. Monthly plans are not refunded after 14 days.
+
+Q: Which platforms are supported?
+A: Windows 10 and later, macOS 13 and later, iOS 16 and later, Android 11 and later, and any modern web browser.
+
+Q: How do I export my notes?
+A: Open Settings, choose Export, and pick Markdown, PDF or HTML. Exports include attachments in a ZIP file.
+
+Q: How do I contact support?
+A: Email support@brightleaf.example or use the in-app chat. Pro and Team customers get a response within 24 hours.
